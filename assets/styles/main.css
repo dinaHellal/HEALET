@@ -96,6 +96,10 @@ background-color: rgba(0 0 0 / .1);
     color: var(--black);
   }
 }
+@media (max-width:992px) {
+  .hero p{
+width: 100%;  }
+}
 .products h2{
   text-align: center;
   font-size: 50px;
@@ -114,6 +118,12 @@ background-color: rgba(0 0 0 / .1);
 span{
   color: var(--border-btn);
 }
+.cardlist .btn{
+  border: none;
+  background-color: var(--border-btn);
+  color: var(--white);
+  align-items: center;
+}
 @media (max-width:992px) {
   .cardlist .cards{
     width: 100%;
@@ -122,4 +132,6 @@ span{
     width: fit-content;
     align-items: center;
   }
+  .btn{
+margin: 15px;  }
 }
