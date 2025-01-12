@@ -108,9 +108,18 @@ background-color: rgba(0 0 0 / .1);
   padding: 20px;
 }
 .cardlist .cards img{
-  width: 100%;
+  width: fit-content;
   height: 150px;
 }
 span{
   color: var(--border-btn);
+}
+@media (max-width:992px) {
+  .cardlist .cards{
+    width: 100%;
+  }
+  .cardlist .cards img{
+    width: fit-content;
+    align-items: center;
+  }
 }
