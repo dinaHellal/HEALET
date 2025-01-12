@@ -78,7 +78,7 @@ img {
   font-size: 20px;
   width: 45%;
 }
-.btn{
+.hero .btn{
   padding: 15px 50px;
   font-size: 15px;
   margin-top: 50px;
@@ -118,7 +118,10 @@ width: 100%;  }
 span{
   color: var(--border-btn);
 }
-.cardlist .btn{
+.btn{
+  padding: 15px 50px;
+  font-size: 15px;
+  margin-top: 50px;
   border: none;
   background-color: var(--border-btn);
   color: var(--white);
@@ -132,6 +135,21 @@ span{
     width: fit-content;
     align-items: center;
   }
-  .btn{
-margin: 15px;  }
+}
+.about-us{
+  padding: var(--padding-section);
+}
+.about-us .container .about-image{
+  width: 50%;
+}
+.about-us .container .about-info {
+  width: 45%;
+}
+@media (max-width:992px) {
+  .about-us .container .about-image {
+    width: 100%;
+  }
+  .about-us .container .about-info {
+    width: 100%;
+  }
 }
