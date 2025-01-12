@@ -5,6 +5,8 @@
   font-family: "Jost", "Roboto", sans-serif;
 }
 :root {
+  --black:#000;
+  --white:#fff;
 --border-btn:#fd9c6b;
   --padding-section: 50px;
 }
@@ -18,7 +20,7 @@ img {
   max-width: 100%;
 }
 .container {
-  padding: 0 15px;
+  padding:  15px;
   margin: auto;
 }
 @media (min-width: 768px) {
@@ -53,4 +55,12 @@ img {
   font-size: 20px;
   color: var(--body-color);
   line-height: 1.5;
+}
+header{
+  position: static;
+  top: 0;
+  background-color: rgba(0 0 0 / 0.1);
+}
+header .logo a{
+  color: var(--white);
 }
