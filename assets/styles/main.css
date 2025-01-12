@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Jost", "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 :root {
   --black:#000;
@@ -48,19 +49,41 @@ img {
 .title {
   font-size: 30px;
   font-weight: normal;
-  color: var(--title-color);
   padding: 15px;
 }
 .description {
   font-size: 20px;
-  color: var(--body-color);
   line-height: 1.5;
 }
-header{
-  position: static;
-  top: 0;
-  background-color: rgba(0 0 0 / 0.1);
-}
-header .logo a{
+.hero{
+  padding: var(--padding-section);
+  background-image: url(/assets/images/slider-bg.webp);
+  background-size: cover;
+  /* background-position: center; */
+  height: 100vh;
+  background-attachment: fixed;
   color: var(--white);
+}
+.logo a{
+  color: var(--white);
+  font-size: 30px;
+  font-weight: 700;
+
+}
+.hero h1{
+  font-size: 50px;
+  padding: 20px 0;
+}
+.hero p{
+  font-size: 20px;
+  width: 45%;
+}
+@media (max-width:992px) {
+  .logo a{
+    color: var(--black);
+  }
+  .hero{
+    background-image: none;
+    color: var(--black);
+  }
 }
